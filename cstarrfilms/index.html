@@ -1,3 +1,5 @@
+### Version 2 - Updated HTML with Sand and Sea Color Palette
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +16,8 @@
         }
         body {
             font-family: 'Oswald', sans-serif;
-            background: #000;
-            color: #fff;
+            background: #F4E1C9; /* Sandy Beige */
+            color: #B0BEC5; /* Soft Wave Gray */
         }
         html {
             scroll-behavior: smooth;
@@ -25,7 +27,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: #000;
+            background: #00695C; /* Deep Sea Teal */
             z-index: 1000;
             height: 60px;
         }
@@ -40,17 +42,17 @@
             margin: 0 15px;
         }
         nav a {
-            color: #fff;
+            color: #1E88E5; /* Ocean Blue */
             text-decoration: none;
             font-size: 1.2em;
         }
         nav a:hover {
-            color: #ffd700;
+            color: #FF6F61; /* Sunset Coral */
         }
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(to bottom, #000, #333);
+            background: linear-gradient(to bottom, #00695C, #0D47A1); /* Deep Sea Teal to Midnight Blue */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -59,11 +61,13 @@
         .hero-content h1 {
             font-size: 3em;
             margin-bottom: 0.5em;
+            color: #1E88E5; /* Ocean Blue */
             opacity: 0;
             animation: fadeIn 1s ease-in forwards;
         }
         .hero-content p {
             font-size: 1.5em;
+            color: #B0BEC5; /* Soft Wave Gray */
             opacity: 0;
             animation: fadeIn 1s ease-in 0.5s forwards;
         }
@@ -86,64 +90,65 @@
             font-size: 2.5em;
             margin-bottom: 0.5em;
             text-align: center;
+            color: #1E88E5; /* Ocean Blue */
         }
         p {
             font-size: 1.2em;
             line-height: 1.6;
         }
         /* Portfolio Styles */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.portfolio-item {
-    position: relative;
-}
-.portfolio-image {
-    position: relative;
-    width: 400px; /* New width */
-    height: 240px; /* New height */
-    overflow: hidden;
-}
-.portfolio-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintains aspect ratio */
-    display: block;
-}
-​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​.portfolio-image a {
-    display: block; /* Ensure the link takes up the full image area */
-    width: 100%;
-    height: 100%;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none; /* Allow clicks to pass through to the link */
-}
-.portfolio-item:hover .overlay {
-    opacity: 1;
-}
-.overlay h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-.overlay p {
-    font-size: 1em;
-}
-​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​/* Contact Form Styles */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            position: relative;
+        }
+        .portfolio-image {
+            position: relative;
+            width: 400px; /* New width */
+            height: 240px; /* New height */
+            overflow: hidden;
+        }
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintains aspect ratio */
+            display: block;
+        }
+        .portfolio-image a {
+            display: block; /* Ensure the link takes up the full image area */
+            width: 100%;
+            height: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 105, 92, 0.7); /* Deep Sea Teal with opacity */
+            color: #F4E1C9; /* Sandy Beige */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Allow clicks to pass through to the link */
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        .overlay h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .overlay p {
+            font-size: 1em;
+        }
+        /* Contact Form Styles */
         form {
             max-width: 600px;
             margin: 0 auto;
@@ -151,29 +156,30 @@
         label {
             display: block;
             margin-top: 10px;
+            color: #B0BEC5; /* Soft Wave Gray */
         }
         input, textarea {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            border: 1px solid #555;
-            background: #111;
-            color: #fff;
+            border: 1px solid #B0BEC5; /* Soft Wave Gray */
+            background: #0D47A1; /* Midnight Blue */
+            color: #F4E1C9; /* Sandy Beige */
         }
         input:focus, textarea:focus {
-            border-color: #ffd700;
+            border-color: #FF6F61; /* Sunset Coral */
             outline: none;
         }
         button {
             margin-top: 10px;
             padding: 10px 20px;
-            background: #333;
-            color: #fff;
+            background: #00695C; /* Deep Sea Teal */
+            color: #F4E1C9; /* Sandy Beige */
             border: none;
             cursor: pointer;
         }
         button:hover {
-            background: #555;
+            background: #FF6F61; /* Sunset Coral */
         }
         .social-media {
             margin-top: 20px;
@@ -181,18 +187,19 @@
         }
         .social-media a {
             margin: 0 10px;
-            color: #fff;
+            color: #1E88E5; /* Ocean Blue */
             text-decoration: none;
         }
         .social-media a:hover {
-            color: #ffd700;
+            color: #FF6F61; /* Sunset Coral */
         }
         /* Footer Styles */
         footer {
-            background: #111;
+            background: #0D47A1; /* Midnight Blue */
             padding: 20px;
             text-align: center;
             font-size: 0.8em;
+            color: #F4E1C9; /* Sandy Beige */
         }
     </style>
 </head>
@@ -218,38 +225,37 @@
             <h2>About Me</h2>
             <p>I'm C Starr Films
             <div class="social-media">
-            <u><a href="https://www.x.com/cstarrfilms">@cstarrfilms on X</a></u>and <u><a href="https://www.youtube.com/@cynthiastarrfilms">YouTube</a></u>am a passionate filmmaker with a love for storytelling. My work focuses on capturing moments of life that are beautiful, travel and adventure jouneys and more.</p>
-            <p>in addition to filmaking I love illutrating and writing coloring picture storybooks for all ages. My books are available on Amazon, visit my 
-<u><a href="https://www.amazon.com/Cynthia-A-Starr/e/B07ZZXNXV2?ref=sr_ntt_srch_lnk_1&qid=1574026547&sr=1-1">Amazon Author Page</a></u> to learn more and find my latest published books.
-            </p>
+            <u><a href="https://www.x.com/cstarrfilms">@cstarrfilms on X</a></u> and <u><a href="https://www.youtube.com/@cynthiastarrfilms">YouTube</a></u> am a passionate filmmaker with a love for storytelling. My work focuses on capturing moments of life that are beautiful, travel and adventure journeys and more.</p>
+            <p>In addition to filmmaking, I love illustrating and writing coloring picture storybooks for all ages. My books are available on Amazon, visit my 
+<u><a href="https://www.amazon.com/Cynthia-A-Starr/e/B07ZZXNXV2?ref=sr_ntt_srch_lnk_1&qid=1574026547&sr=1-1">Amazon Author Page</a></u> to learn more and find my latest published books.</p>
             </div>
         </section>
-<section id="portfolio" class="section">
-    <h2>Portfolio</h2>
-    <div class="portfolio-grid">
-        <div class="portfolio-item">
-            <div class="portfolio-image">
-                <a href="https://www.youtube.com/watch?v=7wAKrPaI10o" target="_blank" rel="noopener noreferrer"><img src="https://cstarrfilms.github.io/cstarrfilms/IMG_CherriesTHN21.jpeg" alt="Cherry Trees Film"></a>
- <div class="overlay">
-                    <h3>Spring Cherry Tree Blossoming!</h3>
-                    <p>Wonderful variety of Cherry Trees blooming by majestic lake.</p>
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <a href="https://www.youtube.com/watch?v=7wAKrPaI10o" target="_blank" rel="noopener noreferrer"><img src="https://cstarrfilms.github.io/cstarrfilms/IMG_CherriesTHN21.jpeg" alt="Cherry Trees Film"></a>
+                        <div class="overlay">
+                            <h3>Spring Cherry Tree Blossoming!</h3>
+                            <p>Wonderful variety of Cherry Trees blooming by majestic lake.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-<div class="portfolio-item">
-    <div class="portfolio-image">
-    <a href="https://www.youtube.com/watch?v=XiMVl-jzT1s" target="_blank" rel="noopener noreferrer"> ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-<img src="https://cstarrfilms.github.io/cstarrfilms/IMG_PiratesTHN21.jpeg" alt="Pirates Fun Film!"></a>
-                <div class="overlay">
-                    <h3>Pirates Fun Sailing Cruise!</h3>
-                    <p>Join in the fun to be a pirate on the waters, hunt for treasure and fight water battles.</p>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <a href="https://www.youtube.com/watch?v=XiMVl-jzT1s" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cstarrfilms.github.io/cstarrfilms/IMG_PiratesTHN21.jpeg" alt="Pirates Fun Film!"></a>
+                        <div class="overlay">
+                            <h3>Pirates Fun Sailing Cruise!</h3>
+                            <p>Join in the fun to be a pirate on the waters, hunt for treasure and fight water battles.</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Add more items as needed -->
             </div>
-        </div>
-        <!-- Add more items as needed -->
-    </div>
-</section>
-​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<section id="contact" class="section">
+        </section>
+        <section id="contact" class="section">
             <h2>Contact Me</h2>
             <form action="https://formspree.io/cynthiastarrfilms@gmail.com" method="POST">
                 <label for="name">Name:</label>
@@ -262,18 +268,15 @@
             </form>
             <div class="social-media">
                 <a href="https://www.youtube.com/@cynthiastarrfilms">YouTube</a> 
-            <div class="social-media">
                 <a href="https://www.x.com/cstarrfilms">X</a>
                 <a href="https://www.instagram.com/cynthiastarr_/">Instagram</a>
-                  <a href="https://www.facebook.com/share/1DwyCTRrn8/?mibextid=wwXIfr">Facebook</a>
-                  <a href="https://www.linkedin.com/in/cynthiaastarr">Linkedin</a>
-                  
-                <!-- Add more links -->
+                <a href="https://www.facebook.com/share/1DwyCTRrn8/?mibextid=wwXIfr">Facebook</a>
+                <a href="https://www.linkedin.com/in/cynthiaastarr">LinkedIn</a>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 cstarrfilms. All rights reserved.</p>
+        <p>© 2023 cstarrfilms. All rights reserved.</p>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -293,4 +296,3 @@
     </script>
 </body>
 </html>
-​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
